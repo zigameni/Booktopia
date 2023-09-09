@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="admin.html" class="img logo rounded-circle mb-5 bg-white"
+                    style="background-image: url(images/person.svg);"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Users</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="list_registered.html">Registerd Users</a>
+                            </li>
+                            <li>
+                                <a href="list_moderators.html">Moderators</a>
+                            </li>
+                            <li>
+                                <a href="list_workers.html">Workers</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Books</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="list_books.html">View Book Library</a>
+                            </li>
+                            <li>
+                                <a href="add_book.html">Add Book</a>
+                            </li>
+                            <li>
+                                <a href="add_ebook.html">Add E-Book</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html">Notifications</a>
+                    </li>
+                    <li>
+                        <a href="../index.html">Log out</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer">
+
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div> -->
+                </div>
+            </nav>
+
+            <!-- Add file 
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
+
+
+-->
+
+
+            <h2 class="mb-4">Add New e-Book</h2>
+            <!-- Start of ADD FORM -->
+            <form>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Book Name</label>
+                    <div class="col-sm-10">
+                        <input type="text"  class="form-control" value=""
+                            placeholder="Book name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Author</label>
+                    <div class="col-sm-10">
+                        <input type="Text" class="form-control" id="inputPassword" placeholder="Author">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Year</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="" placeholder="Year">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="" placeholder="Price">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Book file</label>
+                    <div class="col-sm-10">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Choose thumbnail</label>
+                    <div class="col-sm-10">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                
+                <td><button type="button" class="btn btn-success">Add Book</button></td>
+            </form>
+
+
+
+            
+
+            <!-- <button type="button" class="btn btn-primary">Add New Book</button> -->
+
+
+
+            <h4></h4>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

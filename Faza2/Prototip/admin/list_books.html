@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="admin.html" class="img logo rounded-circle mb-5 bg-white"
+                    style="background-image: url(images/person.svg);"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Users</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="list_registered.html">Registerd Users</a>
+                            </li>
+                            <li>
+                                <a href="list_moderators.html">Moderators</a>
+                            </li>
+                            <li>
+                                <a href="list_workers.html">Workers</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Books</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="list_books.html">View Book Library</a>
+                            </li>
+                            <li>
+                                <a href="add_book.html">Add Book</a>
+                            </li>
+                            <li>
+                                <a href="add_ebook.html">Add E-Book</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html">Notifications</a>
+                    </li>
+                    <li>
+                        <a href="../index.html">Log out</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer">
+
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div> -->
+                </div>
+            </nav>
+
+            <h2 class="mb-4">Library</h2>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Origin</td>
+                        <td>Dan Brown</td>
+                        <td>2017</td>
+                        <td>$ 16.00</td>
+
+                        <td><button type="button" class="btn btn-primary">Edit</button></td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Origin</td>
+                        <td>Dan Brown</td>
+                        <td>2017</td>
+                        <td>$ 16.00</td>
+
+                        <td><button type="button" class="btn btn-primary">Edit</button></td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Origin</td>
+                        <td>Dan Brown</td>
+                        <td>2017</td>
+                        <td>$ 16.00</td>
+
+                        <td><button type="button" class="btn btn-primary">Edit</button></td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- <button type="button" class="btn btn-primary">Add New Book</button> -->
+
+
+
+            <h4></h4>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BOOKTOPIA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- My styles -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav class="py-2 text-light border-bottom" id="navbar">
+        <div class="container d-flex flex-wrap ">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link link-light px-2 active"
+                        aria-current="page">Home</a>
+                </li>
+                <li class="nav-item"><a href="#Book_list" class="nav-link link-light px-2">Library</a></li>
+                <li class="nav-item"><a href="#Audio_book_list" class="nav-link link-light px-2">Audiobooks</a></li>
+                <li class="nav-item"><a href="#List_of_categories" class="nav-link link-light px-2">Categories</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-light px-2">About</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="login/login.html" class="nav-link link-light px-2">Login</a></li>
+                <li class="nav-item"><a href="register/register.html" class="nav-link link-light px-2">Sign up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href=""
+                class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none text-uppercase">
+                <span class="booktopia_logo"><b>Booktopia</b></span>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </header>
+
+    <!--  Main Body -->
+    <!-- Carousel with books -->
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <a href="book_pages/book2.html" class="text-decoration-none">
+                        <div class="img-wrapper"><img src="img/book_1.png" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Fall of ruin and wrath</h5>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+
+                    <a href="book_pages/book2.html" class="text-decoration-none">
+                        <div class="img-wrapper"><img src="img/book_2.png" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The God of endings</h5>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <a href="book_pages/book2.html" class="text-decoration-none">
+                        <div class="img-wrapper"><img src="img/book_3.png" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Murder your employer</h5>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <a href="book_pages/book2.html" class="text-decoration-none">
+                        <div class="img-wrapper"><img src="img/book_4.png" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The death and life of Edgar Allan Poe</h5>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <a href="book_pages/book2.html" class="text-decoration-none">
+                        <div class="img-wrapper"><img src="img/book_5.png" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">On the savage side</h5>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <a href="book_pages/book2.html" class="text-decoration-none">
+                        <div class="img-wrapper"><img src="img/book_6.png" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">I have some questions for you</h5>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <a href="book_pages/book2.html" class="text-decoration-none">
+                        <div class="img-wrapper"><img src="img/book_7.png" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The diamond eye</h5>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- This is just a test-->
+
+
+
+
+
+
+
+
+
+    <!-- Books Gallery -->
+    <div class="container d-flex flex-wrap justify-content-center">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="" class="d-flex align-items-center text-dark text-decoration-none text-uppercase">
+                <span class="booktopia_logo">Latest</span>
+            </a>
+        </div>
+
+
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Fall of ruin and wrath</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">The god of endings</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_3.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Murder your employer</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_4.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">The death and life of Edgar Allan Poe</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_5.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">On the savage side</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_6.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">I have some questions for you</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_7.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">The diamond eye</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">The god of endings</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="book_pages/book2.html" class="text-decoration-none">
+                                <div class="img-wrapper"><img src="img/book_3.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Murder your employer</h5>
+                                    <p class="card-text">This is the best book ever. It has words and pictures.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- End Main Body -->
+
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Booktopia, Inc</p>
+        </footer>
+    </div>
+
+    <!--Carusel script -->
+    <script src="script.js"></script>
+    <!-- MDB -->
+
+</body>
+
+</html>
